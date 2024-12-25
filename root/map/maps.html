@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/root/material/logo-short.png" type="image/png">
+    <!-- Подключаем Leaflet для карты -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/root/map/style.css">
+    <title>KazPost</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="/root/material/logo-short.svg" alt="Logo">
+        </div>
+        <nav>
+            <a class="nav-item" href="#">Услуги</a>
+            <a class="nav-item" href="#">Для бизнеса</a>
+            <a class="nav-item" href="/root/company/company.html">О компании</a>
+        </nav>
+        <a class="btn-item" href="/root/map/maps.html">
+            <img src="/root/material/icons8-location-pin-32.png" alt="" width="20px">
+            Карта отделений
+        </a>
+    </header>
+
+    <aside>
+        <div class="home">
+            <a href="/root/home/index.html">Главная >></a>
+            <a href="/root/company/company.html"> О компании >></a>
+            <a href="/root/work/works.html">Карьерные возможности >></a>
+            <label for="">Карта отделений</label>
+        </div>
+    </aside>
+
+    <main>
+        <div class="welcome">
+            <h1>Отделения Казпочты</h1>
+            <p>Отделения приёма и выдачи посылок</p>
+        </div>
+
+        <div class="container">
+            <!-- Блок для карты -->
+            <div id="map"></div>
+
+            <!-- Блок для отображения информации об отделении -->
+            <div id="branch-info">
+                <h2>Информация об отделении 1</h2>
+                <p id="branch-id1">ID отделения: </p>
+                <p id="branch-location1">Местоположение: </p>
+                <p id="branch-status1">Статус: </p>
+            </div>
+
+            <div id="branch-info">
+                <h2>Информация об отделении 2</h2>
+                <p id="branch-id2">ID отделения: </p>
+                <p id="branch-location2">Местоположение: </p>
+                <p id="branch-status2">Статус: </p>
+            </div>
+            <div id="branch-info">
+                <h2>Информация об отделении 3</h2>
+                <p id="branch-id3">ID отделения: </p>
+                <p id="branch-location3">Местоположение: </p>
+                <p id="branch-status3">Статус: </p>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Спасибо, что посетили наш веб-сайт, посвященный национальному оператору почтовой связи. Мы гордимся тем, что предлагаем надежные и эффективные услуги почтовой связи для наших клиентов по всей стране. Мы являемся ведущим национальным оператором почтовой связи, обеспечивающим широкий спектр услуг, включая доставку писем, посылок и пакетов, а также услуги электронной почты и банковских переводов. Наша миссия – своевременная и надежная доставка вашей корреспонденции, чтобы удовлетворить ваши потребности.</p>
+
+            <p>На сайте qazpost.kz вы можете узнать индекс любых городов Казахстана. Почтовые индексы казахстанских городов Астана, Алматы, Актобе, Павлодар, Атырау, Уральск, Шымкент, Семей, Туркестан, Тараз, Кызылорда, Костанай, Экибастуз, Рудный, Кокшетау, Темиртау, Петропавловск, Усть-Каменогорск. Индексы городов, районов, поселков городского типа и деревень также имеют свои индексы, которые вы можете найти на сайте qazpost.kz. Почтовый индекс Казпочты – последовательность букв или цифр, добавляемая к почтовому адресу с целью облегчения сортировки корреспонденции и посылок, в том числе автоматической.</p>
+
+            <p>© АО «Казпочта», 2024. Все права защищены.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Подключаем JavaScript -->
+    <script src="/root/map/map.js"></script>
+</body>
+</html>

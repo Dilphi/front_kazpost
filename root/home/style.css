@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Шапка */
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 360px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 20px;
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.nav-item {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-item {
+    display: flex;
+    align-items: center;
+    background-color: #355dee;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-item img {
+    margin-right: 10px;
+}
+
+/* Основной блок с приветствием */
+.welcome {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.welcome p {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Карточки секций */
+.section {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f4f6f7;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    text-align: left;
+    font-size: 16px;
+    color: #777;
+}
+.btn-subscribe{
+    position: absolute;
+    bottom: 41%;
+    left: 410px;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #355dee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Контейнер для основного содержимого */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стиль для верхнего блока с QR-кодом */
+.qr-section {
+    background-color: #e9edf3;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.qr-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.qr-section .app-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.app-links a {
+    color: #355dee;
+    text-decoration: none;
+}
+.app-links img {
+    width: 130px;
+}
+
+/* Стили для ссылок на категории */
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.services-column {
+    width: 30%;
+}
+
+.services-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.services-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-column ul li {
+    margin-bottom: 10px;
+}
+
+.services-column ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.services-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+.footer {
+    background-color: #f1f3f5; /* Светло-серый фон, как на скриншоте */
+    color: #6c757d; /* Цвет текста - серый */
+    padding: 10px;
+    text-align: center;
+    width: 1840x; /* Подвал занимает всю ширину */
+    position: relative;
+    top: 100px;
+    line-height: 1.6; /* Для удобочитаемого текста */
+    border-top: 1px solid #ccc; /* Верхняя граница для отделения */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+}
+
+
+#block-qr1, #block-qr2  {
+    display: none; /* Блок изначально скрыт */
+    border: 2px solid;
+    width: 20%;
+    height: 50%;
+    background-color: #f1f3f5;
+    position: absolute; /* Чтобы разместить элемент поверх остальных */
+    top: 50%; /* Отцентрировать элемент по вертикали */
+    left: 50%; /* Отцентрировать элемент по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование с помощью трансформации */
+    z-index: 999; /* Задать высокий z-index, чтобы элемент был над карточками */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Черная тень с мягким размытием */
+}
+
+#closeBtn1, #closeBtn2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #355dee;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+#btn-qr1 {
+    position: absolute;
+    left: 41%;
+    bottom: 41%;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #355dee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn-qr2 {
+    position: absolute;
+    left: 61%;
+    bottom: 39%;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #355dee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#block-qr1 p, #block-qr2 p  {
+    text-align: center;
+    color: black;
+}
